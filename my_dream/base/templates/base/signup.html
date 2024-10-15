@@ -1,0 +1,50 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}Signup Page{% endblock %}
+
+{% block content %}
+<div class="signup-container">
+    <div class="signup-left">
+        <h2>Sign up page</h2>
+        
+
+        <!-- Signup form starts -->
+        <form class="signup-form" method="POST">
+            {% csrf_token %}
+            
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                {{ form.username }}
+            </div>
+            
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                {{ form.email }}
+            </div>
+            
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                {{ form.password }}
+            </div>
+            
+            <div class="mb-3">
+                <label for="confirm_password" class="form-label">Confirm Password</label>
+                {{ form.confirm_password }}
+            </div>
+            
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="terms" required>
+                <label class="form-check-label terms" for="terms">
+                    I agree to the <a href="#">Terms & Conditions</a>
+                </label>
+            </div>
+            
+            <button type="submit" class="btn signup-btn w-100">Sign Up</button>
+        </form>
+        <!-- Signup form ends -->
+    </div>
+    
+    
+</div>
+{% endblock %}

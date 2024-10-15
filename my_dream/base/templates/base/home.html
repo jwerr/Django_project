@@ -1,0 +1,151 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<main class="container mt-4">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'base/images/2_1.jpg' %}" alt="Worcester Bridge" class="d-block w-100" style="height:500px; filter: brightness(80%);">
+                <div class="carousel-caption d-md-block" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                    <h5 class="display-5">Iconic Bridge in Worcester</h5>
+                    <p class="lead">Take in the charming views of the River Severn and historic architecture.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'base/images/2_2.webp' %}" alt="Worcester Cathedral" class="d-block w-100" style="height:500px; filter: brightness(80%);">
+                <div class="carousel-caption d-md-block" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                    <h5 class="display-5">Worcester Cathedral</h5>
+                    <p class="lead">Discover the history of this stunning Gothic cathedral.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'base/images/1.jpg' %}" alt="Worcester City" class="d-block w-100" style="height:500px; filter: brightness(80%);">
+                <div class="carousel-caption d-md-block" style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                    <h5 class="display-5">Historic City Center</h5>
+                    <p class="lead">Explore Worcester's vibrant shopping streets and cultural landmarks.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Accommodation Section -->
+    <section id="accommodation" class="section py-5">
+        <h2 class="text-center display-4 mb-4">Where to Stay in Worcester</h2>
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="card p-4 h-100 border-0 shadow-lg hover-shadow">
+                    <h3>Luxury Hotels</h3>
+                    <p>Stay in upscale hotels offering a blend of modern comfort and historic charm.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 h-100 border-0 shadow-lg hover-shadow">
+                    <h3>Budget-Friendly</h3>
+                    <p>Find affordable stays at cozy inns, perfect for solo travelers or families.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 h-100 border-0 shadow-lg hover-shadow">
+                    <h3>Country Cottages & B&Bs</h3>
+                    <p>Experience traditional English countryside living in peaceful bed-and-breakfasts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Things to Do Section -->
+    <section id="things-to-do" class="section py-5" style="background-color: #f8f9fa;">
+        <h2 class="text-center display-4 mb-4">Things to Do in Worcester</h2>
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="card p-4 h-100 border-0 shadow-lg hover-shadow">
+                    <h3>River Cruises</h3>
+                    <p>Enjoy a scenic cruise along the River Severn and soak in Worcester’s natural beauty.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 h-100 border-0 shadow-lg hover-shadow">
+                    <h3>Worcester Cathedral</h3>
+                    <p>Tour one of England's finest cathedrals, renowned for its history and architecture.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 h-100 border-0 shadow-lg hover-shadow">
+                    <h3>Shopping & Markets</h3>
+                    <p>Browse unique shops and the bustling markets for local crafts and fresh produce.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transport Section -->
+    <section id="transport" class="section py-5">
+        <h2 class="text-center display-4 mb-4">Getting Around Worcester</h2>
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="card p-4 h-100 border-0 shadow-lg hover-shadow">
+                    <h3>Walking Tours</h3>
+                    <p>Explore the historic streets of Worcester with guided or self-guided walking tours.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 h-100 border-0 shadow-lg hover-shadow">
+                    <h3>Public Transport</h3>
+                    <p>Take advantage of the city's bus services to reach key attractions easily.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 h-100 border-0 shadow-lg hover-shadow">
+                    <h3>Bike Rentals</h3>
+                    <p>Rent a bike to explore Worcester's scenic routes and beautiful parks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta text-center py-5" style="background-color: #212529; color: white;">
+        <h2 class="display-4">Need Help?</h2>
+        <p>If you encounter any issues with the website, feel free to contact us at <a href="mailto:samplemail@gmail.com" class="text-warning">samplemail@gmail.com</a>.</p>
+    </section>
+</main>
+
+<style>
+    /* Hover effect for cards */
+    .hover-shadow:hover {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+
+    .cta {
+        background-image: url("{% static 'base/images/contact_bg.jpg' %}");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .cta h2 {
+        color: #ffd700;
+    }
+</style>
+
+{% endblock %}
