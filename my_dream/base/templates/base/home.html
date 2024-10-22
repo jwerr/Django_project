@@ -148,4 +148,12 @@
     }
 </style>
 
+<script>
+    var myCarousel = document.querySelector('#demo');
+    var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 1000, // 3 seconds between slides
+        pause: false // Autoplay continues even when hovering over carousel
+    });
+</script>
+
 {% endblock %}
