@@ -1,0 +1,120 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}Package{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .package-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 15px;
+            width: 250px;
+            text-align: center;
+        }
+        .package-card img {
+            width: 100%;
+            height: 150px;
+            border-radius: 8px;
+        }
+        .package-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .package-price {
+            font-size: 16px;
+            color: #ff6347;
+            margin: 10px 0;
+        }
+        .book-now {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .book-now:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center; padding: 20px;">Travel Packages</h1>
+    <div class="container">
+        <!-- Package 1 -->
+        <div class="package-card">
+            <img src="https://via.placeholder.com/250x150" alt="Eiffel Tower">
+            <div class="package-title">Trecking</div>
+            <div class="package-price">$120</div>
+            <a href="#" class="book-now">Book Now</a>
+        </div>
+        
+        <!-- Package 2 -->
+        <div class="package-card">
+            <img src="https://via.placeholder.com/250x150" alt="New York">
+            <div class="package-title">Downtown</div>
+            <div class="package-price">$1500</div>
+            <a href="#" class="book-now">Book Now</a>
+        </div>
+
+        <!-- Package 3 -->
+        <div class="package-card">
+            <img src="https://via.placeholder.com/250x150" alt="Tokyo">
+            <div class="package-title">Hunting</div>
+            <div class="package-price">$1800</div>
+            <a href="#" class="book-now">Book Now</a>
+        </div>
+
+        <!-- Package 4 -->
+        <div class="package-card">
+            <img src="https://via.placeholder.com/250x150" alt="London">
+            <div class="package-title">fishing</div>
+            <div class="package-price">$1400</div>
+            <a href="#" class="book-now">Book Now</a>
+        </div>
+	
+	<!-- Package 5 -->
+        <div class="package-card">
+            <img src="https://via.placeholder.com/250x150" alt="London">
+            <div class="package-title">Historic</div>
+            <div class="package-price">$1400</div>
+            <a href="#" class="book-now">Book Now</a>
+        </div>
+
+        <!-- Package 6 -->
+        <div class="package-card">
+            <img src="https://via.placeholder.com/250x150" alt="London">
+            <div class="package-title">bird watching& zoo</div>
+            <div class="package-price">$1400</div>
+            <a href="#" class="book-now">Book Now</a>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
+
+{% endblock %}
